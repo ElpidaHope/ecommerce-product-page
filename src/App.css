@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --Orange: hsl(26, 100%, 55%);
+  --Pale-orange: hsl(25, 100%, 94%);
+  --Very-dark-blue: hsl(220, 13%, 13%);
+  --Dark-grayish-blue: hsl(219, 9%, 45%);
+  --Grayish-blue: hsl(220, 14%, 75%);
+  --Light-grayish-blue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+}
+
+@media (min-width:768px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+  }
+
+}
+
+.btn {
+  background-color: var(--Orange);
+  border: none;
+  border-radius: 10px;
+  color: var(--White);
+  font-weight: 700;
+  padding: 15px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.slider {
+  background-color: var(--White);
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.prev {
+  background-image: url('./images/icon-previous.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
+.next {
+  background-image: url('./images/icon-next.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
+@media (min-width:768px) {
+  .content {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    gap: 80px;
+    padding: 0 30px;
+  }
+}

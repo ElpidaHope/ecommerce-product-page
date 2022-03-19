@@ -1,0 +1,66 @@
+.lightbox-bg {
+  display: none;
+}
+
+@media (min-width:768px) {
+  .lightbox-bg {
+    /* display: block; */
+    background: rgba(0, 0, 0, .75);
+    position: absolute;
+    /* z-index: -1; */
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .lightbox-bg.show {
+    display: block;
+  }
+  
+  .lightbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 480px;
+    margin: 85px auto;
+    position: relative;
+  }
+
+  #lb-img {
+    width: 100%;
+    border-radius: 10px;
+    display: inline-block;
+  }
+
+  .lb-slider-btn {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 40%;
+    justify-content: space-between;
+  }
+
+  .prev {
+    transform: translateX(-20px);
+  }
+
+  .next {
+    transform: translateX(20px);
+  }
+
+  #close {
+    margin-bottom: 20px;
+    width: 20px;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+
+  .thumbnail-container {
+    padding: 0 50px;
+  }
+
+
+
+}
+
+

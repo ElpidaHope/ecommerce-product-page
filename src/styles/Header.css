@@ -1,0 +1,136 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header .right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header .right img {
+  cursor: pointer;
+}
+
+#avatar {
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#avatar:hover {
+  border: 2px solid var(--Orange);
+}
+
+.header ul {
+  position: absolute;
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  width: 65%;
+  padding-left: 30px;
+  padding-top: 30px;
+  background-color: red;
+  font-weight: 700;
+  top: 0;
+  left: 0;
+  color: var(--Dark-grayish-blue);
+}
+
+#icon-close {
+  width: 15px;
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media (min-width:768px) {
+  #menu {
+    display: none;
+  }
+
+  #icon-close {
+    display: none;
+  }
+
+  .left {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+  }
+
+  .header ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: none;
+    flex-direction: row;
+    position: static;
+    padding: 0;
+    font-weight: 400;
+  }
+
+  .header ul li {
+    position: relative;
+  }
+
+  .header ul li:hover {
+    cursor: pointer;
+    color: var(--Very-dark-blue);
+  }
+
+  .header li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: -240%;
+    left: 0;
+    background-color: var(--Orange);
+    height: 4px;
+    transform: scaleX(0);
+  }
+
+  .header li:hover::after {
+    transform: scaleX(1);
+  }
+
+  .header {
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--Grayish-blue);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #avatar {
+    width: 50px;
+  }
+}
+
+.cart-no {
+  position: relative;
+}
+
+.right p {
+  background-color: var(--Orange);
+  padding: 3px 7px;
+  border-radius: 7px;
+  position: absolute;
+  top: -9px;
+  right: -4px;
+  font-size: 0.5rem;
+  color: var(--White);
+
+}
