@@ -2,10 +2,6 @@
   position: relative;
 }
 
-#main-img {
-  width: 100%;
-}
-
 .list-img-container {
   display: flex;
   height: 100%;
